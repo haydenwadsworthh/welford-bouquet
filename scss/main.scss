@@ -1,11 +1,204 @@
-$primary: red;
 
 
-.header {
-    h1 {
-        color:$primary;
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: inline-block;
     }
-    h2 {
-        color:blue;
+}
+
+header {
+    .container-fluid {
+        border-bottom: 1px solid red;
+    }
+
+    nav {
+        ul {
+            
+            li {
+               
+                a {
+                    font-size: 16px;
+                    line-height: 26px;
+                    font-weight: normal;
+                    color: black;
+
+                    &:hover {
+                        color: red;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.tile {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 0;
+    margin: 0;
+    padding: 100% 0 0 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+ 
+
+    &--one {
+        background-image: url(../images/thomas-ae-602202-unsplash.jpg);
+    }
+    &--two {
+        background-image: url(../images/beatriz-perez-moya-191993-unsplash.jpg);
+    }
+    &--three {
+        background-image: url(../images/tom-the-photographer-651516-unsplash.jpg);
+    }
+
+    h3 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: calc(100% - 40px);
+        height: auto;
+        margin: 20px;
+        background-color: #fff;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: normal;
+        color: black;
+
+        border:1px solid red ;
+        outline: 10px solid #fff;
+
+        span {
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: bold;
+            color: red;
+        }
+    }
+
+    transition: all ease-in-out 500ms;
+    &:hover {
+        transition: all ease-in-out 500ms;
+        transform: scale(1.05)
+            
+    }
+}
+
+.product {
+    position: relative;
+    display: block;
+    text-decoration: none;
+
+    &--sale {
+        &:after {
+            content:'Sale';
+            display: block;
+            width: 40px;
+            height: 40px;
+            background-color: #000;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-10px,-50%);
+            border-radius: 20px;
+            font-size: 14px;
+            text-align: center;
+            line-height: 40px;
+            color: #fff;
+        }
+    }
+    
+    &__image {
+        display: block;
+        width: 100%;
+        height: 0;
+        padding: 100% 0 0 0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    
+        &--one {
+            background-image: url(../images/thomas-ae-602202-unsplash.jpg);
+        }
+        &--two {
+            background-image: url(../images/beatriz-perez-moya-191993-unsplash.jpg);
+        }
+        &--three {
+            background-image: url(../images/tom-the-photographer-651516-unsplash.jpg);
+        }
+        &--four {
+            background-image: url(../images/tom-the-photographer-651516-unsplash.jpg);
+        }
+    }
+    &__text {
+        h3 {
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: bold;
+            color: red;
+        }
+        p {
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: normal;
+            color: black;
+            span {
+                text-decoration: line-through;
+                color: grey;
+            }
+        }
+
+    }
+}
+
+footer {
+    .container-fluid {
+        border-top: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+    nav {
+        ul {
+            
+            li {
+            
+                a {
+                    font-size: 16px;
+                    line-height: 26px;
+                    font-weight: normal;
+                    color: black;
+
+                    &:hover {
+                        color: red;
+                    }
+                    
+                }
+            }
+        }
+    }
+    .icon {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: pink;
+        i {
+            font-size: 14px;
+            line-height: 40px;
+        }
     }
 }
